@@ -34,5 +34,27 @@ public class Array {
         return  result;
     }
 
+    public int countOccurance(int[] numbers, int target) {
+        int counter = 0;
+        for(int count = 0; count < numbers.length; count++){
+            if(numbers[count] == target){
+                counter++;
+            }
+        }
 
+        return counter;
+    }
+
+
+    public boolean elementContainter(int [] numbers, int target) {
+        for(int count = 0; count < numbers.length; count++){
+            if(numbers[count] == target){
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
+
+
