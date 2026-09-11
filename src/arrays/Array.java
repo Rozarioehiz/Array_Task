@@ -23,4 +23,16 @@ public class Array {
      return result;
     }
 
+    public int[] largestNumber(int[] numbers) {
+        int largest = numbers[0];
+        for(int count = 1; count < numbers.length; count++){
+            if(numbers[count] > largest){
+                largest = numbers[count];
+            }
+        }
+        int [] result = {largest};
+        return  result;
+    }
+
+
 }

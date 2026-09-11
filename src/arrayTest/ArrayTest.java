@@ -22,6 +22,20 @@ public class ArrayTest {
         double [] actual = array.averageNumbers(numbers);
         assertArrayEquals(expected,actual, 0.0001);
     }
-
-
+    @Test
+    public void testForLargestNumberInAnArray(){
+        Array array = new Array();
+        int [] numbers = {1,2,3,4,5,3,9,10};
+        int [] expected = {10};
+        int [] actual = array.largestNumber(numbers);
+        assertArrayEquals(expected,actual);
+    }
+    @Test
+    public void testForOccuringNumbersInAnArray(){
+        Array array = new Array();
+        int [] numbers = {1,2,3,4,5,3,9,10};
+        int [] expected = {3};
+        int [] actual = array.occurance(numbers);
+        assertArrayEquals(expected, actual);
+    }
 }
